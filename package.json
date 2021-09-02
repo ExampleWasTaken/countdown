@@ -1,0 +1,24 @@
+{
+  "name": "countdown",
+  "version": "0.1.0",
+  "description": "Simple app that counts down to a specified time",
+  "main": "./src/main.ts",
+  "scripts": {
+    "start": "npm run build && npm run copyHTML && electron ./public/main.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "w": "tsc -w",
+    "copyHTML": "copy \".\\src\\*.html\"  \".\\public\\\""
+  },
+  "author": "ExampleWasTaken",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^14.0.0",
+    "eslint": "^7.32.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "typescript": "^4.4.2"
+  }
+}
